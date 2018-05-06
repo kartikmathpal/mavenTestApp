@@ -12,9 +12,9 @@ public class AppLauncher {
 
     public static void main(String [] args) {
 
-//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml");
+       // ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml");
 
-//        ApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationContextBean.class);
+       ApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationContextBean.class);
 
 
 //        applicationContext.getBean("");

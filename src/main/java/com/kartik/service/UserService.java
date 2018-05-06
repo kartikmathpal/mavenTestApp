@@ -7,9 +7,11 @@ import com.kartik.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Scanner;
 
 @Service("UserService")
+@Transactional
 public class UserService implements IUserService {
 
     //UserDao userDao = new UserDao();
@@ -25,6 +27,8 @@ public class UserService implements IUserService {
 
 
     //@Override
+
+//    @Transactional
     public  User validate(User user)  throws Exception {
         user =  userDao.searchUser(user);
        return user;

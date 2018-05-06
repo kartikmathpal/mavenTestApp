@@ -4,6 +4,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({ "com.kartik" })
+@ComponentScan({"com.kartik"})
 public class ApplicationContextBean {
+    public ApplicationContextBean() {
+    }
+
+
 }

@@ -33,7 +33,7 @@ public class Controller {
     public void initialize() {
         try {
             User user = userService.requestUserLogin();
-            System.out.println("Login was succesfull for user" + user);
+            System.out.println("Login was successful for user" + user);
 
             // if login successfully then enter to train service
                 try{
